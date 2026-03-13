@@ -1,0 +1,45 @@
+<h1>Student Dashboard</h1>
+
+<div class="container">
+
+<div class="card" routerLink="/attendance">Attendance</div>
+
+<div class="card" routerLink="/marks">Marks</div>
+
+<div class="card" routerLink="/notes">Notes</div>
+
+<div class="card" routerLink="/notices">Notices</div>
+
+<div class="card" routerLink="/complaint">Complaint</div>
+
+<div class="card" routerLink="/gatepass">Gate Pass</div>
+
+</div>
+
+<h2>Marks</h2>
+
+<ul>
+<li *ngFor="let m of marks">
+{{m.subject}} - {{m.marks}}
+</li>
+</ul>
+
+
+<h2>Attendance</h2>
+
+<ul>
+<li *ngFor="let a of attendance">
+{{a.subject}} - {{a.attendance}}
+</li>
+</ul>
+
+
+<h2>Notices</h2>
+
+<ul>
+<li *ngFor="let n of notices">
+{{n.title}} - {{n.date}}
+</li>
+</ul>
+
+
